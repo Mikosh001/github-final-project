@@ -1,0 +1,19 @@
+$ curl -sS --fail https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/12507 | python -c 'import json,sys; r=json.load(sys.stdin); print(json.dumps({"number":r["number"],"html_url":r["html_url"],"state":r["state"],"head":{"ref":r["head"]["ref"],"repo":{"full_name":r["head"]["repo"]["full_name"],"fork":r["head"]["repo"]["fork"]}},"base":{"ref":r["base"]["ref"],"repo":{"full_name":r["base"]["repo"]["full_name"]}}},indent=2))'
+{
+  "number": 12507,
+  "html_url": "https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pull/12507",
+  "state": "closed",
+  "head": {
+    "ref": "bug-fix-revert",
+    "repo": {
+      "full_name": "Mikosh001/mcino-Introduction-to-Git-and-GitHub",
+      "fork": true
+    }
+  },
+  "base": {
+    "ref": "main",
+    "repo": {
+      "full_name": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub"
+    }
+  }
+}

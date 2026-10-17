@@ -1,0 +1,8 @@
+$ curl -sS --fail https://api.github.com/repos/Mikosh001/mcino-Introduction-to-Git-and-GitHub | python -c 'import json,sys; r=json.load(sys.stdin); print(json.dumps({"full_name":r["full_name"],"fork":r["fork"],"parent":{"full_name":r["parent"]["full_name"]}},indent=2))'
+{
+  "full_name": "Mikosh001/mcino-Introduction-to-Git-and-GitHub",
+  "fork": true,
+  "parent": {
+    "full_name": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub"
+  }
+}

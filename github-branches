@@ -1,0 +1,19 @@
+$ git branch -a
+  bug-fix-revert
+  bug-fix-typo
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/bug-fix-revert
+  remotes/origin/bug-fix-typo
+  remotes/origin/main
+
+$ git branch -vv
+  bug-fix-revert fea774a [origin/bug-fix-revert] Revert "Fix copyright year typo in README"
+  bug-fix-typo   bf51763 [origin/bug-fix-typo] Fix copyright year typo in README
+* main           ba1d38b [origin/main] Show relevant fork and pull request fields in terminal evidence
+
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
